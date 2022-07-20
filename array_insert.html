@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>array insert</title>
+</head>
+<body>
+  <script>
+
+    let array = [30,60,10,68,50]
+    let newElem = 45
+    let position = 3
+
+    for (let i = (array.length - 1); i >= 0; i--) {
+      if(i >= position) {
+        array[i+1] = array[i]
+        if(i == position) {
+          array[i] = newElem
+        }
+      }
+    }
+
+    console.log('array', array)
+  </script>
+</body>
+</html>
