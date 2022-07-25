@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array Merge with while loop</title>
+  <script>
+    // array sorting hona chahiye
+    let array1 = [1,45,55,77,88,95]
+    let array2 = [3,11,15,20,25]
+    let array3 = []
+    let i = 0 
+    let j = 0 
+    let k = 0
+    while (i < array1.length && j < array2.length) {
+      if (array1[i] < array2[j]) {
+        array3[k] = array1[i]
+        i++
+        console.log('array[k]', array3[k])
+      } else {
+        array3[k] = array2[j]
+        j++
+        console.log('array[k]', array3[k])
+      }
+      k++
+    }
+
+    while (i < array1.length) {
+      array3[k] = array1[i]
+      i++
+      k++
+    }
+
+    console.log('array3', array3)
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
